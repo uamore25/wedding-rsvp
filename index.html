@@ -779,7 +779,7 @@
             }
 
             const now = new Date();
-            const deadline = new Date('2025-12-05T23:59:59+05:00');
+            const deadline = new Date('2025-12-10T23:59:59+05:00');
             if (now > deadline) {
                 errorDiv.textContent = 'The RSVP period has closed. For questions, please contact the Point of Contact mentioned on your invitation card.';
                 errorDiv.classList.remove('hidden');
@@ -816,7 +816,7 @@
             }
 
             if (!result.found) {
-                errorDiv.textContent = 'Phone number not recognized. Please verify your number or contact the person mentioned on your invitation card before December 5, 2025.';
+                errorDiv.textContent = 'Phone number not recognized. Please verify your number or contact the person mentioned on your invitation card before December 10, 2025.';
                 errorDiv.classList.remove('hidden');
                 return;
             }
@@ -825,7 +825,7 @@
                 errorDiv.innerHTML = `
                     <strong>Response Already Submitted</strong><br><br>
                     Your response was submitted on ${result.submittedDate}.<br><br>
-                    If you would like to edit your response, please contact the person mentioned on your invitation card before December 5, 2025.
+                    If you would like to edit your response, please contact the person mentioned on your invitation card before December 10, 2025.
                 `;
                 errorDiv.classList.remove('hidden');
                 return;
